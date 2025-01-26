@@ -5,7 +5,7 @@ VG_FLAGS=--tool=memcheck --leak-check=yes --track-origins=yes
 
 all: main
 
-main: clean fc cpp s21_cat vg_basic
+main: clean s21_cat
 
 s21_cat: s21_cat.o s21_cat_input.o s21_cat_logic.o s21_cat_output.o s21_cat_oset.o
 	$(CC) $(STD_FLAGS) s21_cat.o s21_cat_input.o s21_cat_logic.o s21_cat_output.o s21_cat_oset.o -o s21_cat
@@ -35,5 +35,8 @@ fc:
 cpp:
 	cppcheck --enable=all --suppress=missingIncludeSystem ./*.c
 
-vg_basic:
-	valgrind $(VG_FLAGS) ./s21_cat ../texts/fellowship.txt
+valgrind:
+	valgrind $(VG_FLAGS) ./s21_cat ./lib/fellowship.txt
+
+leaks:
+	leaks --atExit -- ./s21_cat lib/fellowship.txt | grep -e "total"
