@@ -1,0 +1,10 @@
+Name: Gandalf               Role: leader        Nationality: Isengard           Species: Maya
+Name: Samwise Gamgee        Role: maintenance   Nationality: Shire              Species: Hobbit
+Name: Frodo Baggins         Role: ring-bearer   Nationality: Shire              Species: Hobbit or Elf
+Name: Perigrin Took         Role: smoker        Nationality: Shire              Species: Hobbit
+Name: Mariadoc Brandybuck   Role: eater         Nationality: Shire              Species: Hobbit
+Name: Aragorn               Role: pathfinder    Nationality: Dunedain           Species: Human
+Name: Boromir               Role: sword         Nationality: Gondor             Species: Human
+Name: Legolas               Role: bow           Nationality: Woodland Realm     Species: Elf
+Name: Gimli                 Role: ax            Nationality: Erebor             Species: Dwarf
+Name: C3PO                  Role: interpreter   Nationality: Alderaan           Species: Droid
